@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Cấu trúc bảng cho bảng `nhanvien`
 --
 
-CREATE TABLE `NHANVIEN` (
+CREATE TABLE `nhanvien` (
   `maNV` int(11) NOT NULL,
   `hovaten` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `chucvu` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE `NHANVIEN` (
 -- Đang đổ dữ liệu cho bảng `NHANVIEN`
 --
 
-INSERT INTO `NHANVIEN` (`maNV`, `hovaten`, `chucvu`, `phongban`, `luong`, `ngayvaolam`) VALUES
+INSERT INTO `nhanvien` (`maNV`, `hovaten`, `chucvu`, `phongban`, `luong`, `ngayvaolam`) VALUES
 (1, 'Nguyễn Hồng Phong', 'Nhân viên', 'Maketing', 10000000, '2022-15-02'),
 (2, 'Nguyễn Văn A', 'Nhân viên', 'Maketing', 5000000, '2022-15-02'),
 (3, 'Nguyễn Văn B', 'Nhân viên', 'Maketing', 6000000, '2022-15-02'),
