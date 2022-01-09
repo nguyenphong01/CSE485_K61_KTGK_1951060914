@@ -20,7 +20,7 @@ require_once 'views/commons/error.php';
     <?php if (!empty($employees)): ?>          <!-- bien books nay truyen tu BookController.php sang -->
         <?php foreach ($employees AS $employee) : ?>
             <tr>
-                <td><?php echo $employee['magv'] ?></td>
+                <td><?php echo $employee['maNV'] ?></td>
                 <td><?php echo $employee['hovaten'] ?></td>
                 <td><?php echo $employee['chucvu'] ?></td>
                 <td><?php echo $employee['phongban'] ?></td>
@@ -30,11 +30,11 @@ require_once 'views/commons/error.php';
                     <?php
                     //khai báo 3 url xem, sửa, xóa
                     $urlDetail =
-                        "index.php?controller=employee&action=detail&magv=" . $employee['maNV'];
+                        "index.php?controller=employee&action=detail&maNV=" . $employee['maNV'];
                     $urlEdit =
-                        "index.php?controller=employee&action=edit&magv=" . $employee['maNV'];
+                        "index.php?controller=employee&action=edit&maNV=" . $employee['maNV'];
                     $urlDelete =
-                        "index.php?controller=employee&action=delete&magv=" . $employee['maNV'];
+                        "index.php?controller=employee&action=delete&maNV=" . $employee['maNV'];
                     ?>
                     <a href="<?php echo $urlDetail?>">Chi tiết</a> &nbsp;
                     <a href="<?php echo $urlEdit?>">Sửa</a> &nbsp;
