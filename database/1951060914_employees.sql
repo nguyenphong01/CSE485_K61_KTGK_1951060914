@@ -54,7 +54,7 @@ INSERT INTO `nhanvien` (`maNV`, `hovaten`, `chucvu`, `phongban`, `luong`, `ngayv
 --
 -- Chỉ mục cho bảng `nhanvien`
 --
-ALTER TABLE `NHANVIEN`
+ALTER TABLE `nhanvien`
   ADD PRIMARY KEY (`maNV`);
 
 --
@@ -64,7 +64,7 @@ ALTER TABLE `NHANVIEN`
 --
 -- AUTO_INCREMENT cho bảng `nhanvien`
 --
-ALTER TABLE `NHANVIEN`
+ALTER TABLE `nhanvien`
   MODIFY `maNV` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 

@@ -19,7 +19,7 @@ require_once 'views/commons/error.php';
     <?php if (!empty($employees)): ?>      
         <?php foreach ($employees AS $employee) : ?>
             <tr>
-                <td><?php echo $employee['magv'] ?></td>
+                <td><?php echo $employee['maNV'] ?></td>
                 <td><?php echo $employee['hovaten'] ?></td>
                 <td><?php echo $employee['chucvu'] ?></td>
                 <td><?php echo $employee['phongban'] ?></td>
